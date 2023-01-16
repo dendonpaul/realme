@@ -61,6 +61,7 @@
 .logo {
   font-size: 30px !important;
 }
+
 .container {
   display: flex;
   height: 85vh;
@@ -74,6 +75,8 @@
 }
 .image-container img {
   width: 200px;
+
+  /* margin-left: 350px; */
 }
 .icon-container img {
   width: 50px;
@@ -93,3 +96,47 @@
 .nav-container .arrow:hover {
   color: white;
 }
+.feature {
+  position: absolute;
+}
+.one {
+  top: 500px;
+  right: 80px;
+}
+.two {
+  top: 200px;
+  left: 425px;
+  transform: rotate(-90deg);
+}
+.three {
+  bottom: 450px;
+  left: 50px;
+  transform: rotate(-180deg);
+}
+.four {
+  bottom: 50px;
+  left: 425px;
+  transform: rotate(-270deg);
+}
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+}
+
+/* .overlay {
+  width: 0;
+  height: 0;
+  border-top: 500px solid #fff;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #fff;
+  border-left: 500px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */

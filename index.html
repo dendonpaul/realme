@@ -30,24 +30,82 @@
                 <img src="images/mobile1.png" />
             </div>
             <div class="features-container">
-                <div class="icon-container">
-                    <img src="images/camera.png" alt="" srcset="">
-                </div>
-                <div class="text-container">
-                    <h2>Camera</h2>
-                    <p>12 MP, Good Quality</p>
+                <div id="circle">
+                    <div class="feature one">
+                        <div class="icon-container">
+                            <img src="images/camera.png" alt="" srcset="">
+                        </div>
+                        <div class="text-container">
+                            <h2>Camera</h2>
+                            <p>12 MP, Good Quality</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <div class="icon-container">
+                            <img src="images/camera.png" alt="" srcset="">
+                        </div>
+                        <div class="text-container">
+                            <h2>Processor</h2>
+                            <p>12 MP, Good Quality</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <div class="icon-container">
+                            <img src="images/camera.png" alt="" srcset="">
+                        </div>
+                        <div class="text-container">
+                            <h2>Display</h2>
+                            <p>12 MP, Good Quality</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <div class="icon-container">
+                            <img src="images/camera.png" alt="" srcset="">
+                        </div>
+                        <div class="text-container">
+                            <h2>Battery</h2>
+                            <p>12 MP, Good Quality</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="nav-container">
-                <i class="fa-solid fa-angle-up arrow"></i>
+                <i class="fa-solid fa-angle-up arrow" id="btnUp" onclick=upClick()></i>
                 <h2>Features</h2>
-                <i class="fa-solid fa-angle-down arrow"></i>
+                <i class="fa-solid fa-angle-down arrow" id="btnDown" onclick=downClick()></i>
             </div>
         </div>
     </div>
 </body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
     integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+
+    </script>
+<script>
+    let circle = document.getElementById('circle');
+
+    let btnUp = document.getElementById('btnUp');
+    let btnDown = document.getElementById('btnDown');
+
+    let rotateValue = circle.style.transform
+    console.log(rotateValue)
+    let rotateSum;
+
+    function upClick() {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+
+    function downClick() {
+        rotateSum = rotateValue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+</script>
 
 </html>
