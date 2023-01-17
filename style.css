@@ -46,6 +46,7 @@
 
 .navbar ul li a:hover {
   color: brown;
+  transition: 0.5s ease-in-out;
 }
 
 .main-container {
