@@ -19,9 +19,9 @@
             <a href="#" class="logo"><img src="images/mobile.jpg" />RealMe</a>
             <ul>
                 <li><a href="index.html"> Home </a> </li>
-                <li><a href="phone.html"> Phone </a> </li>
-                <li><a href="accessories.html"> Accessories </a> </li>
-                <li><a href="cart.html"> Cart</a> </li>
+                <li><a href="#"> Phone </a> </li>
+                <li><a href="#"> Accessories </a> </li>
+                <li><a href="#"> Cart</a> </li>
                 <li><a href="contact.html"> Contact</a> </li>
             </ul>
         </div>
@@ -85,27 +85,5 @@
     integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-<script>
-    let circle = document.getElementById('circle');
-
-    let btnUp = document.getElementById('btnUp');
-    let btnDown = document.getElementById('btnDown');
-
-    let rotateValue = circle.style.transform
-    console.log(rotateValue)
-    let rotateSum;
-
-    function upClick() {
-        rotateSum = rotateValue + "rotate(-90deg)";
-        circle.style.transform = rotateSum;
-        rotateValue = rotateSum;
-    }
-
-    function downClick() {
-        rotateSum = rotateValue + "rotate(90deg)";
-        circle.style.transform = rotateSum;
-        rotateValue = rotateSum;
-    }
-</script>
 
 </html>
