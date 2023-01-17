@@ -60,6 +60,8 @@
 
 .logo {
   font-size: 30px !important;
+  position: relative;
+  z-index: 3;
 }
 
 .container {
@@ -75,7 +77,8 @@
 }
 .image-container img {
   width: 200px;
-
+  position: relative;
+  z-index: 3;
   /* margin-left: 350px; */
 }
 .icon-container img {
@@ -97,25 +100,30 @@
   color: white;
 }
 .feature {
+  display: flex;
   position: absolute;
 }
 .one {
-  top: 500px;
-  right: 80px;
+  position: absolute;
+  top: 520px;
+  right: 0px;
 }
 .two {
-  top: 200px;
-  left: 425px;
+  position: absolute;
+  top: 60px;
+  left: 450px;
   transform: rotate(-90deg);
 }
 .three {
-  bottom: 450px;
-  left: 50px;
+  position: absolute;
+  top: 422px;
+  right: 803px;
   transform: rotate(-180deg);
 }
 .four {
-  bottom: 50px;
-  left: 425px;
+  position: absolute;
+  bottom: 72px;
+  right: 452px;
   transform: rotate(-270deg);
 }
 
@@ -127,16 +135,18 @@
   top: 0;
   left: 0;
   transform: rotate(0deg);
+  transition: 1s;
 }
 
-/* .overlay {
+.overlay {
   width: 0;
   height: 0;
   border-top: 500px solid #fff;
   border-right: 500px solid transparent;
-  border-bottom: 500px solid #fff;
+  border-bottom: 470px solid #fff;
   border-left: 500px solid #fff;
   position: absolute;
   left: 0;
   top: 0;
-} */
+  z-index: 2;
+}
