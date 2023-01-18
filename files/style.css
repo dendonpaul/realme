@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(35, 34, 34);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  font-size: 16px;
+  padding: 10px;
+  display: flex;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  left: 100px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.navbar ul li a:hover {
+  color: brown;
+  transition: 0.5s ease-in-out;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    90deg,
+    rgba(219, 37, 213, 0.6),
+    rgba(62, 142, 200, 0.6)
+  );
+}
+
+.logo {
+  font-size: 30px !important;
+  position: relative;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+  height: 85vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+.image-container img {
+  width: 200px;
+  position: relative;
+  z-index: 3;
+  /* margin-left: 350px; */
+}
+.icon-container img {
+  width: 50px;
+}
+.features-container {
+  display: flex;
+  gap: 10px;
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+.nav-container .arrow {
+  height: 1.2em;
+  cursor: pointer;
+}
+.nav-container .arrow:hover {
+  color: white;
+}
+.feature {
+  display: flex;
+  position: absolute;
+}
+.one {
+  position: absolute;
+  top: 520px;
+  right: 0px;
+}
+.two {
+  position: absolute;
+  top: 60px;
+  left: 450px;
+  transform: rotate(-90deg);
+}
+.three {
+  position: absolute;
+  top: 422px;
+  right: 803px;
+  transform: rotate(-180deg);
+}
+.four {
+  position: absolute;
+  bottom: 72px;
+  right: 452px;
+  transform: rotate(-270deg);
+}
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.overlay {
+  width: fit-content;
+  height: fit-content;
+  border-top: 370px solid #fff;
+  border-right: 500px solid transparent;
+  border-bottom: 400px solid #fff;
+  border-left: 500px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}

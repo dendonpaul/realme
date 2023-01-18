@@ -106,31 +106,31 @@
 }
 .one {
   position: absolute;
-  top: 520px;
-  right: 0px;
+  top: 50%;
+  right: 0;
 }
 .two {
   position: absolute;
-  top: 60px;
-  left: 450px;
+  top: 10%;
+  left: 42%;
   transform: rotate(-90deg);
 }
 .three {
   position: absolute;
-  top: 422px;
-  right: 803px;
+  top: 40%;
+  left: 0;
   transform: rotate(-180deg);
 }
 .four {
   position: absolute;
-  bottom: 72px;
-  right: 452px;
+  bottom: 10%;
+  right: 40%;
   transform: rotate(-270deg);
 }
 
 #circle {
-  width: 1000px;
-  height: 1000px;
+  width: 50%;
+  height: 100%;
   background-color: transparent;
   position: absolute;
   top: 0;
@@ -142,10 +142,10 @@
 .overlay {
   width: 0;
   height: 0;
-  border-top: 500px solid #fff;
-  border-right: 500px solid transparent;
-  border-bottom: 470px solid #fff;
-  border-left: 500px solid #fff;
+  border-top: 50vh solid #fff;
+  border-right: 50vh solid transparent;
+  border-bottom: 50vh solid #fff;
+  border-left: 50vh solid #fff;
   position: absolute;
   left: 0;
   top: 0;
@@ -153,75 +153,82 @@
 }
 
 /*Contact Form*/
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
+
+.contact-container h1 {
+  margin-bottom: 50px;
 }
 
-.form {
+.container-contact {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
 }
-
-.form h4 {
-  color: black;
-  font-weight: 200;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-}
-.form .block {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.form .inner-element input {
-  padding: 10px;
-  width: 250px;
-  border-radius: 10px;
-}
-.inner-element {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.form-container {
-  background-color: rgba(238, 230, 230, 0.099);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80%;
+.contact-title {
   text-align: center;
-  border-radius: 10px;
-  border-top: 3px solid rgb(223, 222, 222);
-  border-right: 3px solid rgb(223, 222, 222);
-  padding: 0 20px;
+  font-weight: 900;
 }
-.gender {
+.form-group {
+  margin-bottom: 30px;
+}
+
+.capitalize {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: azure;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="textarea"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="textarea"]:focus {
+  border-radius: 10px;
+}
+
+form .btn:hover {
+  background-color: rgb(168, 43, 226);
+}
+
+/*Contact Us section*/
+.address-container h1 {
+  margin-bottom: 50px;
+}
+.contact {
+  text-align: center;
+  justify-content: center;
+}
+
+.contactForm {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
-  color: black;
-  font-weight: 200;
-  font-size: 20px;
-}
-.gender span {
-  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  justify-content: center;
+  column-gap: 500px;
+  margin: 30px;
 }
 
-.button {
-  margin-top: 30px;
-  padding: 10px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  background-color: rgb(18, 172, 121);
-  width: 96%;
-  border-radius: 10px;
+.chat {
+  font-size: large;
 }
-
-.form-container .page-title {
-  font-size: 35px;
+.add-title {
+  font-weight: bold;
+  margin: 20px;
+}
+.phn {
+  font-weight: bold;
+  margin: 20px;
+}
+.web {
+  font-weight: bold;
+  margin: 20px;
+}
+.email {
+  font-weight: bold;
+  margin: 20px;
 }

@@ -19,3 +19,27 @@ function downClick() {
   circle.style.transform = rotateSum;
   rotateValue = rotateSum;
 }
+
+/*Contact Form*/
+/*Form Validation*/
+
+//Validate Name Field
+function validate() {
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("InputEmail");
+  const subjectInput = document.getElementById("subject");
+  const messageInput = document.getElementById("message");
+  //check if empty
+  if (
+    nameInput.value == "" ||
+    emailInput == "" ||
+    subjectInput == "" ||
+    messageInput == ""
+  ) {
+    alert("Field cannot be empty");
+  } else if (nameInput.value.length < 6) {
+    alert("Need 6 or more chars.");
+  } else if (nameInput.value.length > 20) {
+    alert("Only 20 Chars allowed.");
+  }
+}
