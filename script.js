@@ -32,9 +32,9 @@ function validate() {
   //check if empty
   if (
     nameInput.value == "" ||
-    emailInput == "" ||
-    subjectInput == "" ||
-    messageInput == ""
+    emailInput.value == "" ||
+    subjectInput.value == "" ||
+    messageInput.value == ""
   ) {
     alert("Field cannot be empty");
   } else if (nameInput.value.length < 6) {
