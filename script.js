@@ -41,5 +41,7 @@ function validate() {
     alert("Need 6 or more chars.");
   } else if (nameInput.value.length > 20) {
     alert("Only 20 Chars allowed.");
+  } else {
+    alert("Form Validated Successfully.");
   }
 }
