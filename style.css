@@ -260,6 +260,8 @@ form .btn:hover {
   display: flex;
   background-color: #fff;
   gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .services {
   display: flex;
@@ -269,6 +271,7 @@ form .btn:hover {
   padding: 10px;
   margin-top: 50px;
   height: 400px;
+  width: 30vw;
 }
 .services p {
   text-align: center;
@@ -288,4 +291,81 @@ form .btn:hover {
 }
 .service-icon {
   height: 100px !important;
+}
+
+/*EMI Page*/
+
+.emi-parent-container {
+  display: flex;
+}
+.emi-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(100, 148, 237, 0.296);
+  width: 50vw;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.emi-image {
+  background-image: url("images/calc.jpg");
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8;
+}
+.emi-image h1 {
+  font-size: 72px;
+  margin-left: 550px;
+  margin-top: -0px;
+  font-family: "Roboto", sans-serif;
+  /* color: white;
+  background-color: rgb(152, 151, 151); */
+}
+.emi-form-container {
+  height: 75vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loanAmount {
+  display: flex;
+  gap: 50px;
+  padding: 25px 50px;
+  justify-content: space-between;
+}
+.loanAmount button {
+  border: none;
+  width: 150px;
+  padding: 10px;
+  font-size: 20px;
+  align-self: center;
+  background-color: rgb(178, 255, 195);
+  cursor: pointer;
+}
+.loanAmount button:hover {
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+.test {
+  display: flex;
+  justify-content: center;
+}
+.mr-10 {
+  margin-left: 10px;
+}
+
+.totalamt h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.totalamt p {
+  font-size: 50px;
+  text-align: center;
 }
