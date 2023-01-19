@@ -37,10 +37,13 @@ function validate() {
     messageInput.value == ""
   ) {
     alert("Field cannot be empty");
+    //check if name field has more that 6 chars
   } else if (nameInput.value.length < 6) {
     alert("Need 6 or more chars.");
+    //check if name field has 20 or less chars
   } else if (nameInput.value.length > 20) {
     alert("Only 20 Chars allowed.");
+    //success alert if validation is successful
   } else {
     alert("Form Validated Successfully.");
   }
