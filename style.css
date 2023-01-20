@@ -457,3 +457,37 @@ form .btn:hover {
 .about-culture h3 {
   margin-bottom: 20px;
 }
+
+/*Cart Page*/
+.cart-parent-container {
+  max-width: 1024px;
+  margin: auto;
+}
+.cart-box {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-box img {
+  height: 150px;
+}
+.cart-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart-desc button {
+  width: 70px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(145, 255, 95);
+  color: black;
+  cursor: pointer;
+}
+.cart-box input {
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+}
