@@ -87,14 +87,12 @@ if (lastSegment === "index.html") {
   let quantity = document.getElementById("qty");
   let totalValue = document.getElementById("total-value");
   let price = document.getElementById("price");
-  // let price = document.getElementsByTagName("h3")[1].innerHTML;
 
   quantity.addEventListener("change", () => {
     calculateTotal();
   });
 
   const calculateTotal = () => {
-    // let total = parseInt(quantity.value) * parseInt(price.value);
     totalValue.innerText = parseInt(quantity.value) * parseInt(price.innerText);
   };
 }
