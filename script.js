@@ -66,5 +66,35 @@ if (lastSegment === "index.html") {
   });
 
   //Function to calculate EMI
-  const calculateEmi = () => {};
+  const calculateEmi = () => {
+    let duration = 0;
+    //convert yearly interest to monthly
+    let r = parseFloat(interestRate.value) / 12 / 100;
+    let p = loanAmount.value;
+    let n = loanDuration.value;
+
+    let EMI = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+    let totalInterest = EMI * n - p;
+    let totalPayment = totalInterest + parseFloat(p);
+
+    document.getElementById("emi-result").innerText = "Rs" + Math.round(EMI);
+
+    document.getElementById("total-result").innerText =
+      "Rs" + Math.round(totalPayment);
+  };
+} else if (lastSegment == "cart.html") {
+  //Cart total calculation
+  let quantity = document.getElementById("qty");
+  let totalValue = document.getElementById("total-value");
+  let price = document.getElementById("price");
+  // let price = document.getElementsByTagName("h3")[1].innerHTML;
+
+  quantity.addEventListener("change", () => {
+    calculateTotal();
+  });
+
+  const calculateTotal = () => {
+    // let total = parseInt(quantity.value) * parseInt(price.value);
+    totalValue.innerText = parseInt(quantity.value) * parseInt(price.innerText);
+  };
 }

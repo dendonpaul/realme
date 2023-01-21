@@ -22,7 +22,7 @@
                 <li><a href="services.html"> Services </a> </li>
                 <li><a href="about.html"> About </a> </li>
                 <li><a href="emi.html"> EMI </a> </li>
-                <li><a href="#"> Cart</a> </li>
+                <li><a href="cart.html"> Cart</a> </li>
                 <li><a href="contact.html"> Contact</a> </li>
             </ul>
         </div>
@@ -34,14 +34,14 @@
                 <div class="loanAmount">
                     <h4>Loan Amount</h4>
                     <div class="slidecontainer">
-                        <input type="range" min="5000" max="200000" value="5000" class="slider" id="myRange">
+                        <!-- <input type="range" min="5000" max="200000" value="5000" class="slider" id="myRange"> -->
                     </div>
                     <input type="number" id="loanamount" />
                 </div>
                 <div class="loanAmount">
                     <h4>Loan Duration <br />(months)</h4>
                     <div class="slidecontainer mr-10">
-                        <input type="range" min="1" max="12" value="1" class="slider" id="myRange2">
+                        <!-- <input type="range" min="1" max="12" value="1" class="slider" id="myRange2"> -->
                     </div>
                     <input type="number" id="loantenure" />
                 </div>
@@ -57,11 +57,11 @@
             <div class="emi-result-container">
                 <div class="totalamt">
                     <h3>EMI Amount</h3>
-                    <p>4000</p>
+                    <p id="emi-result">0</p>
                 </div>
                 <div class="totalamt">
                     <h3>Total Payment <br /> (Principal + Interest)</h3>
-                    <p>40000</p>
+                    <p id="total-result">0</p>
                 </div>
             </div>
 
