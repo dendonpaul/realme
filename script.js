@@ -52,4 +52,10 @@ if (lastSegment === "index.html") {
       alert("Form Validated Successfully.");
     }
   }
+} else if (lastSegment == "emi.html") {
+  /*EMI Calculator script*/
+  let loanAmount = document.getElementById("amount");
+  let interestRate = document.getElementById("interest");
+  let loanDuration = document.getElementById("loantenure");
+  let calculate = document.getElementById("calculate");
 }

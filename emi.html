@@ -36,21 +36,21 @@
                     <div class="slidecontainer">
                         <input type="range" min="5000" max="200000" value="5000" class="slider" id="myRange">
                     </div>
-                    <input type="number" id="inputNum" />
+                    <input type="number" id="loanamount" />
                 </div>
                 <div class="loanAmount">
-                    <h4>Loan Month</h4>
+                    <h4>Loan Duration <br />(months)</h4>
                     <div class="slidecontainer mr-10">
                         <input type="range" min="1" max="12" value="1" class="slider" id="myRange2">
                     </div>
-                    <input type="number" id="inputNum" />
+                    <input type="number" id="loantenure" />
                 </div>
                 <div class="loanAmount">
                     <h4>Interest Rate (%)</h4>
-                    <input type="number" min="5" max="15" value="5" />
+                    <input type="number" min="5" max="15" value="5" id="loaninterest" />
                 </div>
                 <div class="loanAmount test">
-                    <button>EMI Calculate</button>
+                    <button id="submit">Calculate EMI</button>
                 </div>
             </div>
 
