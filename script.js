@@ -54,8 +54,17 @@ if (lastSegment === "index.html") {
   }
 } else if (lastSegment == "emi.html") {
   /*EMI Calculator script*/
-  let loanAmount = document.getElementById("amount");
-  let interestRate = document.getElementById("interest");
+  let loanAmount = document.getElementById("loanamount");
+  let interestRate = document.getElementById("loaninterest");
   let loanDuration = document.getElementById("loantenure");
-  let calculate = document.getElementById("calculate");
+  let calculate = document.getElementById("submit");
+
+  // run calculate function on clicking submit button
+  calculate.addEventListener("click", (e) => {
+    e.preventDefault();
+    calculateEmi();
+  });
+
+  //Function to calculate EMI
+  const calculateEmi = () => {};
 }

@@ -340,6 +340,9 @@ form .btn:hover {
   padding: 25px 50px;
   justify-content: space-between;
 }
+.loanAmount input {
+  height: 25px;
+}
 .loanAmount button {
   border: none;
   width: 150px;
