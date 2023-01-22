@@ -58,12 +58,15 @@ if (lastSegment === "index.html") {
   let interestRate = document.getElementById("loaninterest");
   let loanDuration = document.getElementById("loantenure");
   let calculate = document.getElementById("submit");
+  let error = document.getElementById("error");
 
   // run calculate function on clicking submit button
   calculate.addEventListener("click", (e) => {
     e.preventDefault();
     if (loanAmount.value == "" || interestRate == "" || loanDuration == "") {
+      error.innerText = "Please fill all the fields";
     } else {
+      error.innerText = "";
       calculateEmi();
     }
   });

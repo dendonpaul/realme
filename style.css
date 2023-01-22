@@ -338,6 +338,10 @@ form .btn:hover {
   flex-direction: column;
   justify-content: center;
 }
+.loanAmount:last-child {
+  flex-direction: column;
+  align-items: center;
+}
 
 .loanAmount {
   display: flex;
