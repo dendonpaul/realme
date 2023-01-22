@@ -472,6 +472,9 @@ form .btn:hover {
   justify-content: space-between;
   align-items: center;
 }
+.cart-box table td {
+  padding: 20px;
+}
 .cart-box img {
   height: 150px;
 }
