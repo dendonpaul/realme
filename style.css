@@ -476,8 +476,7 @@ form .btn:hover {
   padding: 20px;
   border: 1px solid gray;
 }
-.cart-box table tr {
-}
+
 .cart-box img {
   height: 150px;
 }
@@ -499,4 +498,7 @@ form .btn:hover {
   height: 30px;
   font-size: 18px;
   text-align: center;
+}
+.cart-price {
+  width: 100px;
 }

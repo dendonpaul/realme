@@ -94,5 +94,8 @@ if (lastSegment === "index.html") {
 
   const calculateTotal = () => {
     totalValue.innerText = parseInt(quantity.value) * parseInt(price.innerText);
+    if (quantity.value == 10) {
+      alert("Max 10 Qty allowed");
+    }
   };
 }
