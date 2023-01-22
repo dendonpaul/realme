@@ -474,6 +474,9 @@ form .btn:hover {
 }
 .cart-box table td {
   padding: 20px;
+  border: 1px solid gray;
+}
+.cart-box table tr {
 }
 .cart-box img {
   height: 150px;
