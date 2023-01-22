@@ -62,7 +62,10 @@ if (lastSegment === "index.html") {
   // run calculate function on clicking submit button
   calculate.addEventListener("click", (e) => {
     e.preventDefault();
-    calculateEmi();
+    if (loanAmount.value == "" || interestRate == "" || loanDuration == "") {
+    } else {
+      calculateEmi();
+    }
   });
 
   //Function to calculate EMI

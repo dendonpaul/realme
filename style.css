@@ -288,6 +288,11 @@ form .btn:hover {
   font-size: 18px;
   padding: 10px;
   background-color: coral;
+  cursor: pointer;
+}
+.services button:hover {
+  background-color: rgba(255, 127, 80, 0.574);
+  transition: 0.3s ease-in-out;
 }
 .service-icon {
   height: 100px !important;
